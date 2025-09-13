@@ -1887,46 +1887,55 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-/* ===== Custom Publications Layout ===== */
-.publication-item {
-  list-style: none;
-  margin-bottom: 20px;
+/* ===== Publications as Row Cards ===== */
+article.portfolio[data-page="publication"] .project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
-.pub-card {
+article.portfolio[data-page="publication"] .project-item a {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
-  background: #1e1e1f; /* matches dark theme */
-  padding: 15px;
+  gap: 16px;
+  background: #1e1e1f;           /* match dark theme */
+  padding: 14px;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  transition: transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  transition: transform .2s ease;
 }
 
-.pub-card:hover {
-  transform: translateY(-3px);
+article.portfolio[data-page="publication"] .project-item a:hover {
+  transform: translateY(-2px);
 }
 
-.pub-image img {
+/* shrink the left image to a neat thumbnail */
+article.portfolio[data-page="publication"] .project-img {
   width: 120px;
-  height: auto;
+  min-width: 120px;
   border-radius: 6px;
+  overflow: hidden;
+}
+article.portfolio[data-page="publication"] .project-img img {
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
-.pub-content {
-  flex: 1;
+/* hide the magnifier icon */
+article.portfolio[data-page="publication"] .project-item-icon-box {
+  display: none;
 }
 
-.pub-title {
+/* tidy the text */
+article.portfolio[data-page="publication"] .project-title {
+  margin: 0 0 6px 0;
   font-size: 16px;
   font-weight: 500;
-  margin-bottom: 5px;
   color: #fff;
 }
-
-.pub-meta {
+article.portfolio[data-page="publication"] .project-category {
+  margin: 0;
+  color: #a8a8a8;
   font-size: 14px;
-  color: #aaa;
 }
