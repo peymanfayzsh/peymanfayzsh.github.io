@@ -1931,3 +1931,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: #aaa;
   margin: 0;
 }
+
+/* ===== Publications Full Width ===== */
+.portfolio[data-page="publication"] .project-list {
+  display: block;          /* remove grid/flexbox from template */
+  width: 100%;
+}
+
+.portfolio[data-page="publication"] .project-item {
+  width: 100%;             /* each item spans full width */
+  margin-bottom: 16px;
+}
+
+.portfolio[data-page="publication"] .pub-card {
+  width: 100%;             /* card fills container */
+}
