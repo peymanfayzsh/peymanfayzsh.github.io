@@ -1880,3 +1880,53 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+
+
+
+
+
+/* ===== Custom Publications Layout ===== */
+.publication-item {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.pub-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: #1e1e1f; /* matches dark theme */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.pub-card:hover {
+  transform: translateY(-3px);
+}
+
+.pub-image img {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.pub-content {
+  flex: 1;
+}
+
+.pub-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.pub-meta {
+  font-size: 14px;
+  color: #aaa;
+}
