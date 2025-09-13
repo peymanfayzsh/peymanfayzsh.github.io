@@ -1946,3 +1946,46 @@ textarea.form-input::-webkit-resizer { display: none; }
 .portfolio[data-page="publication"] .pub-card {
   width: 100%;             /* card fills container */
 }
+
+/* ===== Publications Styled like "What I'm Doing" ===== */
+.portfolio[data-page="publication"] .pub-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--eerie-black-2);   /* same box color as service cards */
+  border: 1px solid var(--jet);       /* subtle border like About boxes */
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.portfolio[data-page="publication"] .pub-image {
+  flex: 0 0 320px;   /* 4x bigger than before (80px → 320px) */
+}
+
+.portfolio[data-page="publication"] .pub-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.portfolio[data-page="publication"] .pub-content {
+  flex: 1;
+}
+
+.portfolio[data-page="publication"] .pub-title {
+  font-size: 18px;   /* bigger font */
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.portfolio[data-page="publication"] .pub-meta {
+  font-size: 15px;   /* slightly bigger */
+  color: #aaa;
+  margin: 0;
+}
+
