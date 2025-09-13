@@ -1887,31 +1887,47 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-/* Style publication cards but keep original JS hooks intact */
+/* ===== Publications Row Card Fix ===== */
+.portfolio[data-page="publication"] .project-item a {
+  display: block;  /* reset to block so link works fully */
+}
+
 .portfolio[data-page="publication"] .pub-card {
-  display: flex;
-  gap: 16px;
+  display: flex;                /* make row layout */
+  flex-direction: row;           /* horizontal */
+  align-items: flex-start;       /* align text at top */
+  gap: 12px;                     /* space between image & text */
   background: #1e1e1f;
-  padding: 14px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.portfolio[data-page="publication"] .pub-image {
+  flex: 0 0 80px;                /* fixed thumbnail width */
 }
 
 .portfolio[data-page="publication"] .pub-image img {
-  width: 120px;
+  width: 80px;                   /* thumbnail smaller */
   height: auto;
   border-radius: 6px;
   object-fit: cover;
 }
 
+.portfolio[data-page="publication"] .pub-content {
+  flex: 1;                       /* take rest of row */
+}
+
 .portfolio[data-page="publication"] .pub-title {
-  margin: 0 0 6px 0;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
+  margin: 0 0 4px;
   color: #fff;
+  line-height: 1.4;
 }
 
 .portfolio[data-page="publication"] .pub-meta {
-  font-size: 14px;
+  font-size: 13px;
   color: #aaa;
+  margin: 0;
 }
