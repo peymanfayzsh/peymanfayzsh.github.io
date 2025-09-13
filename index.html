@@ -600,241 +600,186 @@ My goal is to combine innovative device design with signal processing to develop
 
       
 
-      <!--
-        - #Publication
-      -->
+<!--
+  - #Publication
+-->
+<article class="portfolio" data-page="publication">
+
+  <header>
+    <h2 class="h2 article-title">Publication</h2>
+  </header>
+
+  <section class="projects">
+
+    <!-- Keep filter UI but simplify to only "All" so no subsections -->
+    <ul class="filter-list">
+      <li class="filter-item">
+        <button class="active" data-filter-btn>All</button>
+      </li>
+    </ul>
+
+    <div class="filter-select-box">
+      <button class="filter-select" data-select>
+        <!-- NOTE: the template *intentionally* uses data-selecct-value (with two c’s) -->
+        <div class="select-value" data-selecct-value>All</div>
+        <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+      </button>
+      <ul class="select-list">
+        <li class="select-item"><button data-select-item>All</button></li>
+      </ul>
+    </div>
+
+    <!-- REQUIRED by the template: project-list / project-item / data-filter-item / data-category -->
+    <ul class="project-list">
+
+      <!-- Use your existing images; data-category can be any label since we only keep "All" -->
+      <li class="project-item active" data-filter-item data-category="publication">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-1.jpg" alt="On-Chip Resonant Frequency Modulation for Low-Power iToF" loading="lazy">
+          </figure>
+          <h3 class="project-title">On-Chip Resonant Frequency Modulation for Low-Power Indirect ToF Sensors — In Preparation (2025)</h3>
+          <p class="project-category">Publication</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="publication">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-2.png" alt="Single-Shot Transient Imaging via Compressed ToF" loading="lazy">
+          </figure>
+          <h3 class="project-title">Single-Shot Transient Imaging via Compressed ToF & Dictionary Learning — ICIP (2025)</h3>
+          <p class="project-category">Publication</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="publication">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-3.jpg" alt="RGBZ CMOS Image Sensor" loading="lazy">
+          </figure>
+          <h3 class="project-title">RGBZ CMOS Image Sensor for Simultaneous Color & Multi-Frequency Depth — CoSeRa (2024)</h3>
+          <p class="project-category">Publication</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="publication">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-4.png" alt="Simultaneous Multi-frequency Demodulation" loading="lazy">
+          </figure>
+          <h3 class="project-title">Simultaneous Multi-frequency Demodulation for Single-shot Multi-path ToF — IEEE TCI (2023)</h3>
+          <p class="project-category">Publication</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="publication">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-5.png" alt="Time-Domain Super-Resolution for ToF" loading="lazy">
+          </figure>
+          <h3 class="project-title">Fast Time-Domain Super-Resolution for ToF Imaging — IEEE ICECS (2022)</h3>
+          <p class="project-category">Publication</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="publication">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-6.png" alt="2-Tap Macro-Pixel ToF CIS" loading="lazy">
+          </figure>
+          <h3 class="project-title">A 2-Tap Macro-Pixel-Based Indirect ToF CIS for Multi-Frequency Demodulation — IEEE ISCAS (2022)</h3>
+          <p class="project-category">Publication</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="publication">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-7.png" alt="Single-Shot Multi-Frame ToF Sensor" loading="lazy">
+          </figure>
+          <h3 class="project-title">Proposal of a Single-Shot Multi-Frame Multi-Frequency CMOS ToF Sensor — IEEE ICECS (2021)</h3>
+          <p class="project-category">Publication</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="publication">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-8.jpg" alt="Stretchable Electrodes sEMG" loading="lazy">
+          </figure>
+          <h3 class="project-title">Performance of PDMS-Based Stretchable Electrodes in Long-Term sEMG — IEEE ICEE (2020)</h3>
+          <p class="project-category">Publication</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="publication">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-9.png" alt="Stretchable Dry Electrodes EMG/ECG" loading="lazy">
+          </figure>
+          <h3 class="project-title">Highly Conformable Stretchable Dry Electrodes for EMG/ECG — Sensors &amp; Actuators A (2019)</h3>
+          <p class="project-category">Publication</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="publication">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-3.jpg" alt="Stretchable Interconnects Elastomers" loading="lazy">
+          </figure>
+          <h3 class="project-title">Stretchable Interconnects Embedded in Biocompatible Elastomers — IEEE ICEE (2018)</h3>
+          <p class="project-category">Publication</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="publication">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-5.png" alt="Book Chapter ToF CIS" loading="lazy">
+          </figure>
+          <h3 class="project-title">Book Chapter: 2-Tap Indirect ToF CMOS Image Sensor — ATHENA Research Book (2022)</h3>
+          <p class="project-category">Publication</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="publication">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-6.png" alt="Patent Stretchable EMG Electrode" loading="lazy">
+          </figure>
+          <h3 class="project-title">Patent: Stretchable EMG Signal Electrode — Patent No. 30/07147 (2019)</h3>
+          <p class="project-category">Publication</p>
+        </a>
+      </li>
+
+      <li class="project-item active" data-filter-item data-category="publication">
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+            <img src="./assets/images/project-7.png" alt="Patent Flexible Polymeric ECG Electrode" loading="lazy">
+          </figure>
+          <h3 class="project-title">Patent: Flexible Polymeric ECG Electrode — Patent No. 30/07146 (2019)</h3>
+          <p class="project-category">Publication</p>
+        </a>
+      </li>
+
+    </ul>
+  </section>
+</article>
 
-      <article class="portfolio" data-page="publication">
-
-        <header>
-          <h2 class="h2 article-title">Publication</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
 
 
 
