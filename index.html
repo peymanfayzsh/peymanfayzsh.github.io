@@ -610,167 +610,45 @@ My goal is to combine innovative device design with signal processing to develop
   </header>
 
   <section class="projects">
-    <ul class="publication-list">
 
-      <li class="publication-item">
-        <div class="pub-card">
-          <div class="pub-image">
-            <img src="./assets/images/project-1.jpg" alt="ToF publication" loading="lazy">
+    <!-- Keep filter bar but only All -->
+    <ul class="filter-list">
+      <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+    </ul>
+
+    <div class="filter-select-box">
+      <button class="filter-select" data-select>
+        <div class="select-value" data-selecct-value>All</div>
+        <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+      </button>
+      <ul class="select-list">
+        <li class="select-item"><button data-select-item>All</button></li>
+      </ul>
+    </div>
+
+    <!-- MUST keep project-list / project-item structure -->
+    <ul class="project-list">
+
+      <li class="project-item active" data-filter-item data-category="publication">
+        <a href="#">
+          <div class="pub-card">
+            <div class="pub-image">
+              <img src="./assets/images/project-1.jpg" alt="ToF publication" loading="lazy">
+            </div>
+            <div class="pub-content">
+              <h3 class="pub-title">On-Chip Resonant Frequency Modulation for Low-Power Indirect ToF Sensors — In Preparation (2025)</h3>
+              <p class="pub-meta">Publication</p>
+            </div>
           </div>
-          <div class="pub-content">
-            <h3 class="pub-title">On-Chip Resonant Frequency Modulation for Low-Power Indirect ToF Sensors — In Preparation (2025)</h3>
-            <p class="pub-meta">Publication</p>
-          </div>
-        </div>
+        </a>
       </li>
 
-      <li class="publication-item">
-        <div class="pub-card">
-          <div class="pub-image">
-            <img src="./assets/images/project-2.png" alt="Single-Shot Transient Imaging" loading="lazy">
-          </div>
-          <div class="pub-content">
-            <h3 class="pub-title">Single-Shot Transient Imaging via Compressed ToF & Dictionary Learning — ICIP (2025)</h3>
-            <p class="pub-meta">Publication</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="publication-item">
-        <div class="pub-card">
-          <div class="pub-image">
-            <img src="./assets/images/project-3.jpg" alt="RGBZ CMOS Sensor" loading="lazy">
-          </div>
-          <div class="pub-content">
-            <h3 class="pub-title">RGBZ CMOS Image Sensor for Multi-Frequency Depth Acquisition — CoSeRa (2024)</h3>
-            <p class="pub-meta">Publication</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="publication-item">
-        <div class="pub-card">
-          <div class="pub-image">
-            <img src="./assets/images/project-4.png" alt="Multi-frequency Demodulation" loading="lazy">
-          </div>
-          <div class="pub-content">
-            <h3 class="pub-title">Simultaneous Multi-frequency Demodulation for Single-shot Multi-path ToF Imaging — IEEE TCI (2023)</h3>
-            <p class="pub-meta">Publication</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="publication-item">
-        <div class="pub-card">
-          <div class="pub-image">
-            <img src="./assets/images/project-5.png" alt="Time-Domain Super-Resolution" loading="lazy">
-          </div>
-          <div class="pub-content">
-            <h3 class="pub-title">Fast Time-Domain Super-Resolution for ToF Imaging — IEEE ICECS (2022)</h3>
-            <p class="pub-meta">Publication</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="publication-item">
-        <div class="pub-card">
-          <div class="pub-image">
-            <img src="./assets/images/project-6.png" alt="2-Tap ToF CIS" loading="lazy">
-          </div>
-          <div class="pub-content">
-            <h3 class="pub-title">A 2-Tap Macro-Pixel-Based Indirect ToF CIS — IEEE ISCAS (2022)</h3>
-            <p class="pub-meta">Publication</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="publication-item">
-        <div class="pub-card">
-          <div class="pub-image">
-            <img src="./assets/images/project-7.png" alt="Multi-Frame CMOS ToF Sensor" loading="lazy">
-          </div>
-          <div class="pub-content">
-            <h3 class="pub-title">Proposal of a Single-Shot Multi-Frame Multi-Frequency CMOS ToF Sensor — IEEE ICECS (2021)</h3>
-            <p class="pub-meta">Publication</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="publication-item">
-        <div class="pub-card">
-          <div class="pub-image">
-            <img src="./assets/images/project-8.jpg" alt="Stretchable Electrodes" loading="lazy">
-          </div>
-          <div class="pub-content">
-            <h3 class="pub-title">Performance of PDMS-Based Stretchable Electrodes in Long-Term sEMG — IEEE ICEE (2020)</h3>
-            <p class="pub-meta">Publication</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="publication-item">
-        <div class="pub-card">
-          <div class="pub-image">
-            <img src="./assets/images/project-9.png" alt="Dry Electrodes" loading="lazy">
-          </div>
-          <div class="pub-content">
-            <h3 class="pub-title">Highly Conformable Stretchable Dry Electrodes for EMG/ECG — Sensors &amp; Actuators A (2019)</h3>
-            <p class="pub-meta">Publication</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="publication-item">
-        <div class="pub-card">
-          <div class="pub-image">
-            <img src="./assets/images/project-3.jpg" alt="Stretchable Interconnects" loading="lazy">
-          </div>
-          <div class="pub-content">
-            <h3 class="pub-title">Stretchable Interconnects Embedded in Biocompatible Elastomers — IEEE ICEE (2018)</h3>
-            <p class="pub-meta">Publication</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="publication-item">
-        <div class="pub-card">
-          <div class="pub-image">
-            <img src="./assets/images/project-5.png" alt="Book Chapter ToF CIS" loading="lazy">
-          </div>
-          <div class="pub-content">
-            <h3 class="pub-title">Book Chapter: 2-Tap Indirect ToF CMOS Image Sensor — ATHENA Research Book (2022)</h3>
-            <p class="pub-meta">Publication</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="publication-item">
-        <div class="pub-card">
-          <div class="pub-image">
-            <img src="./assets/images/project-6.png" alt="Patent Stretchable EMG Electrode" loading="lazy">
-          </div>
-          <div class="pub-content">
-            <h3 class="pub-title">Patent: Stretchable EMG Signal Electrode — Patent No. 30/07147 (2019)</h3>
-            <p class="pub-meta">Publication</p>
-          </div>
-        </div>
-      </li>
-
-      <li class="publication-item">
-        <div class="pub-card">
-          <div class="pub-image">
-            <img src="./assets/images/project-7.png" alt="Patent Flexible Polymeric ECG Electrode" loading="lazy">
-          </div>
-          <div class="pub-content">
-            <h3 class="pub-title">Patent: Flexible Polymeric ECG Electrode — Patent No. 30/07146 (2019)</h3>
-            <p class="pub-meta">Publication</p>
-          </div>
-        </div>
-      </li>
+      <!-- repeat for other publications, always inside project-item with data-filter-item -->
 
     </ul>
   </section>
 </article>
+
 
 
 
