@@ -5,276 +5,708 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peyman Fayyaz - Portfolio</title>
+  <title>vCard - Personal Portfolio</title>
 
+  <!--
+    - favicon
+  -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
+  <!--
+    - google font link
+  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+  <!--
+    - #MAIN
+  -->
+
   <main>
 
-    <!-- SIDEBAR -->
+    <!--
+      - #SIDEBAR
+    -->
+
     <aside class="sidebar" data-sidebar>
+
       <div class="sidebar-info">
+
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Peyman Fayyaz" width="120">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
         </figure>
 
         <div class="info-content">
           <h1 class="name" title="Peyman Fayyaz Shahandashti">Peyman Fayyaz<br>Shahandashti</h1>
+
           <p class="title">PhD Researcher in Microelectronics & Computational Imaging</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
+
           <ion-icon name="chevron-down"></ion-icon>
         </button>
+
       </div>
 
       <div class="sidebar-info_more">
+
         <div class="separator"></div>
+
         <ul class="contacts-list">
+
           <li class="contact-item">
-            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
             <div class="contact-info">
               <p class="contact-title">Email</p>
+
               <a href="mailto:peyman.fayyaz@usc.es" class="contact-link">peyman.fayyaz@usc.es</a>
             </div>
+
           </li>
+
           <li class="contact-item">
-            <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
             <div class="contact-info">
               <p class="contact-title">Phone</p>
+
               <a href="tel:+34881816446" class="contact-link">+34 881 816 446</a>
             </div>
+
           </li>
+
           <li class="contact-item">
-            <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
+
               <time datetime="1992-05-20">May 20, 1992</time>
             </div>
+
           </li>
+
           <li class="contact-item">
-            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
             <div class="contact-info">
               <p class="contact-title">Location</p>
+
               <address>Santiago de Compostela, Spain</address>
             </div>
+
           </li>
+
         </ul>
 
         <div class="separator"></div>
+
         <ul class="social-list">
-          <li class="social-item"><a href="https://github.com/peymanfayzsh" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
-          <li class="social-item"><a href="https://citius.gal/team/peyman-fayyaz" class="social-link"><ion-icon name="globe-outline"></ion-icon></a></li>
-          <li class="social-item"><a href="https://www.linkedin.com/in/peyman-fayyaz" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+
+          <li class="social-item">
+            <a href="https://github.com/peymanfayzsh" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://citius.gal/team/peyman-fayyaz" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/peyman-fayyaz" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
         </ul>
+
       </div>
+
     </aside>
 
-    <!-- MAIN CONTENT -->
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
     <div class="main-content">
 
-      <!-- NAVBAR -->
+      <!--
+        - #NAVBAR
+      -->
+
       <nav class="navbar">
+
         <ul class="navbar-list">
-          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Publications</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Projects</button></li>
-          <li class="navbar-item"><button class="navbar-link" data-nav-link>Gallery</button></li>
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Publications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Gallery</button>
+          </li>
+
         </ul>
+
       </nav>
 
-      <!-- ABOUT -->
-      <article class="about active" data-page="about">
-        <header><h2 class="h2 article-title">About Me</h2></header>
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
         <section class="about-text">
-          <p>
-            I am a PhD researcher at the Research Centre in Intelligent Technologies (CiTIUS), University of Santiago de Compostela, 
-            funded by the EU’s Horizon 2020 Marie Skłodowska-Curie project MENELAOSNT. My research focuses on CMOS time-of-flight 
-            image sensors, computational sensing, and micro/nanofabrication.
-          </p>
-        </section>
+<p>
+I am a PhD researcher at the Research Centre in Intelligent Technologies (CiTIUS), University of Santiago de Compostela, Spain, 
+funded by the European Union’s Horizon 2020 Marie Skłodowska-Curie project MENELAOSNT. 
+My research focuses on the fabrication and design of CMOS time-of-flight image sensors with 2D/3D capabilities, 
+computational sensing, and micro/nanofabrication. 
+I am passionate about advancing computational imaging, mixed-signal IC design, and microelectronics for next-generation sensor technologies.
+</p>
+<p>
+Previously, I have conducted research in stretchable electronics, BioMEMS, and wearable biopotential monitoring devices. 
+My goal is to combine innovative device design with signal processing to develop powerful sensing systems for healthcare and computer vision applications.
+</p>
 
-        <p style="margin:15px 0;"><a href="Peyman_Fayyaz-CV.pdf" class="contact-link">📄 Download CV</a></p>
+<p style="margin-top:20px;">
+  <a href="Peyman_Fayyaz-CV.pdf" class="btn btn-primary" download>📄 Download CV</a>
+</p>
 
-        <section class="service">
-          <h3 class="h3 service-title">What I'm Doing</h3>
-          <ul class="service-list">
-            <li class="service-item"><div class="service-icon-box"><img src="./assets/images/icon-dev.svg" width="40"></div>
-              <div class="service-content-box"><h4 class="h4 service-item-title">Analog/Mixed-Signal IC Design</h4>
-              <p class="service-item-text">Designing and simulating integrated circuits for advanced imaging systems.</p></div>
-            </li>
-            <li class="service-item"><div class="service-icon-box"><img src="./assets/images/icon-app.svg" width="40"></div>
-              <div class="service-content-box"><h4 class="h4 service-item-title">CMOS Image Sensors</h4>
-              <p class="service-item-text">Developing CMOS image sensors with 2D/3D and ToF capabilities.</p></div>
-            </li>
-            <li class="service-item"><div class="service-icon-box"><img src="./assets/images/icon-design.svg" width="40"></div>
-              <div class="service-content-box"><h4 class="h4 service-item-title">Microelectronics</h4>
-              <p class="service-item-text">Exploring microelectronics for sensing, imaging, and wearable technologies.</p></div>
-            </li>
-            <li class="service-item"><div class="service-icon-box"><img src="./assets/images/icon-photo.svg" width="40"></div>
-              <div class="service-content-box"><h4 class="h4 service-item-title">Micro/Nanofabrication</h4>
-              <p class="service-item-text">Fabrication of stretchable electronics, MEMS, and biosensors.</p></div>
-            </li>
-          </ul>
-        </section>
+
+        <!--
+          - service
+        -->
+
+        
+<section class="service">
+
+  <h3 class="h3 service-title">What I'm Doing</h3>
+
+  <ul class="service-list">
+
+    <li class="service-item">
+      <div class="service-icon-box"><img src="./assets/images/icon-dev.svg" alt="IC design" width="40"></div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Analog/Mixed-Signal IC Design</h4>
+        <p class="service-item-text">Designing and simulating mixed-signal circuits for advanced sensing and imaging SoCs.</p>
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box"><img src="./assets/images/icon-app.svg" alt="CMOS Image Sensors" width="40"></div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">CMOS Image Sensors (CIS)</h4>
+        <p class="service-item-text">Developing CMOS ToF sensors with single-shot multi-frequency demodulation and RGBZ capability.</p>
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box"><img src="./assets/images/icon-design.svg" alt="Microelectronics" width="40"></div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Microelectronics</h4>
+        <p class="service-item-text">Building computational sensing pipelines that fuse device design with signal processing.</p>
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box"><img src="./assets/images/icon-photo.svg" alt="Micro/Nanofabrication" width="40"></div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Micro/Nanofabrication</h4>
+        <p class="service-item-text">Cleanroom process development for stretchable electronics, BioMEMS, and novel electrodes.</p>
+      </div>
+    </li>
+
+  </ul>
+
+</section>
+
+
+
+        <!--
+          - testimonials
+        -->
+
+        
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        
+
       </article>
-      <!-- RESUME -->
-      <article class="resume" data-page="resume">
-        <header><h2 class="h2 article-title">Resume</h2></header>
 
-        <!-- Education -->
-        <section class="timeline">
-          <div class="title-wrapper"><div class="icon-box"><ion-icon name="book-outline"></ion-icon></div><h3 class="h3">Education</h3></div>
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">PhD in Information Technology</h4>
-              <span>2020 — Present, University of Santiago de Compostela, Spain</span>
-              <p class="timeline-text">Thesis: Fabrication of CMOS ToF sensors with 2D/3D capabilities.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">MSc in Electrical Engineering (Nano- and Microelectronic Devices)</h4>
-              <span>2016 — 2019, Amirkabir University of Technology, Tehran, Iran</span>
-              <p class="timeline-text">Thesis: Fabrication of polymer-based stretchable electrodes for EMG signal monitoring.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">BSc in Electrical Engineering (Electronics)</h4>
-              <span>2010 — 2015, Iran University of Science and Technology, Tehran, Iran</span>
-              <p class="timeline-text">Thesis: Design and Simulation of a power-efficient Li-Ion battery charger circuit.</p>
-            </li>
-          </ol>
-        </section>
 
-        <!-- Experience -->
-        <section class="timeline">
-          <div class="title-wrapper"><div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div><h3 class="h3">Experience</h3></div>
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Research Assistant</h4>
-              <span>2020 — Present, CiTIUS, University of Santiago de Compostela, Spain</span>
-              <p class="timeline-text">Research in multi-frequency ToF systems, IC design, PCB/FPGA setup, and computational imaging.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Visiting Research Fellow</h4>
-              <span>2021, pmdtechnologies, Siegen, Germany</span>
-              <p class="timeline-text">Pixel design, simulation, and optimization for 3D ToF sensors.</p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Research Fellow</h4>
-              <span>2016 — 2020, MBTechlab & SRL, Tehran Polytechnic, Iran</span>
-              <p class="timeline-text">Developed stretchable electrodes, microfluidics for biosensing, and wearable electronics.</p>
-            </li>
-          </ol>
-        </section>
 
-        <!-- Awards -->
-        <section class="timeline">
-          <div class="title-wrapper"><div class="icon-box"><ion-icon name="trophy-outline"></ion-icon></div><h3 class="h3">Awards & Honors</h3></div>
-          <ol class="timeline-list">
-            <li class="timeline-item"><h4 class="h4 timeline-item-title">La Cátedra USC – Televés Grant</h4><span>2025</span></li>
-            <li class="timeline-item"><h4 class="h4 timeline-item-title">Spain Ministry of Science & Innovation Grant</h4><span>2024</span></li>
-            <li class="timeline-item"><h4 class="h4 timeline-item-title">Marie Skłodowska-Curie ESR Grant (MENELAOSNT)</h4><span>2020</span></li>
-            <li class="timeline-item"><h4 class="h4 timeline-item-title">Best Paper Award, ICEE</h4><span>2018</span></li>
-          </ol>
-        </section>
 
-        <!-- Skills -->
-        <section class="skill">
-          <h3 class="h3 skills-title">Skills</h3>
-          <ul class="skills-list content-card">
-            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Cadence, HSPICE, COMSOL</h5><data value="90">90%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:90%;"></div></div></li>
-            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">MATLAB, Python, C, HDL</h5><data value="85">85%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:85%;"></div></div></li>
-            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Lab Tools & Fabrication</h5><data value="80">80%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:80%;"></div></div></li>
-          </ul>
-        </section>
 
-        <!-- Languages -->
-        <section class="skill">
-          <h3 class="h3 skills-title">Languages</h3>
-          <ul class="skills-list content-card">
-            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">English</h5><data value="95">95%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:95%;"></div></div></li>
-            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Spanish</h5><data value="40">40%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:40%;"></div></div></li>
-            <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Persian</h5><data value="100">100%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:100%;"></div></div></li>
-          </ul>
-        </section>
+      <!--
+        - #RESUME
+      -->
 
-        <!-- Community Service -->
-        <section class="timeline">
-          <div class="title-wrapper"><div class="icon-box"><ion-icon name="people-outline"></ion-icon></div><h3 class="h3">Community Service</h3></div>
-          <ol class="timeline-list">
-            <li class="timeline-item"><h4 class="h4 timeline-item-title">Reviewer, IEEE ISCAS 2024</h4></li>
-            <li class="timeline-item"><h4 class="h4 timeline-item-title">Member, IEEE CAS Society (2021–2024)</h4></li>
-            <li class="timeline-item"><h4 class="h4 timeline-item-title">Organizer, European Researchers’ Night & CiTIUS events</h4></li>
-          </ol>
-        </section>
-      </article>
+      <article class="resume" data-page="resume"><header><h2 class="h2 article-title">Resume</h2></header>
+<section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+    <h3 class="h3">Education</h3>
+  </div>
+  <ol class="timeline-list">
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">PhD in Information Technology</h4>
+      <span>2020 — Present, University of Santiago de Compostela, Spain</span>
+      <p class="timeline-text">Doctoral Thesis: Fabrication of CMOS ToF sensors with 2D/3D capabilities.</p>
+    </li>
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">MSc in Electrical Engineering (Nano- and Microelectronic Devices)</h4>
+      <span>2016 — 2019, Amirkabir University of Technology, Tehran, Iran</span>
+      <p class="timeline-text">Thesis: Fabrication of polymer-based stretchable electrodes for EMG signal monitoring.</p>
+    </li>
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">BSc in Electrical Engineering (Electronics)</h4>
+      <span>2010 — 2015, Iran University of Science and Technology, Tehran, Iran</span>
+      <p class="timeline-text">Thesis: Design and Simulation of a power-efficient Li-Ion battery charger circuit.</p>
+    </li>
+  </ol>
+</section>
 
-      <!-- PUBLICATIONS -->
+<section class="timeline">
+  <div class="title-wrapper">
+    <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+    <h3 class="h3">Experience</h3>
+  </div>
+  <ol class="timeline-list">
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Research Assistant</h4>
+      <span>2020 — Present, CiTIUS, University of Santiago de Compostela, Spain</span>
+      <p class="timeline-text">Research in minimal-harmonic single-shot multi-frequency ToF systems, IC design, PCB & FPGA setup, and computational imaging.</p>
+    </li>
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Visiting Research Fellow</h4>
+      <span>2021, pmdtechnologies, Siegen, Germany</span>
+      <p class="timeline-text">Pixel design, simulation, and optimization for 3D time-of-flight sensors.</p>
+    </li>
+    <li class="timeline-item">
+      <h4 class="h4 timeline-item-title">Research Fellow</h4>
+      <span>2016 — 2020, MBTechlab & SRL, Tehran Polytechnic, Iran</span>
+      <p class="timeline-text">Developed stretchable electrodes, microfluidics for biosensing, and wearable electronics.</p>
+    </li>
+  </ol>
+</section>
+
+<section class="timeline">
+  <div class="title-wrapper"><div class="icon-box"><ion-icon name="trophy-outline"></ion-icon></div><h3 class="h3">Awards & Honors</h3></div>
+  <ol class="timeline-list">
+    <li class="timeline-item"><h4 class="h4 timeline-item-title">La Cátedra USC – Televés Grant</h4><span>2025</span></li>
+    <li class="timeline-item"><h4 class="h4 timeline-item-title">Spain Ministry of Science & Innovation Grant</h4><span>2024</span></li>
+    <li class="timeline-item"><h4 class="h4 timeline-item-title">Marie Skłodowska-Curie ESR Grant</h4><span>2020</span></li>
+    <li class="timeline-item"><h4 class="h4 timeline-item-title">Best Paper Award, ICEE</h4><span>2018</span></li>
+  </ol>
+</section>
+
+<section class="skill">
+  <h3 class="h3 skills-title">Skills</h3>
+  <ul class="skills-list content-card">
+    <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Cadence, HSPICE, COMSOL</h5><data value="90">90%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:90%;"></div></div></li>
+    <li class="skills-item"><div class="title-wrapper"><h5 class="h5">MATLAB, Python, C, HDL</h5><data value="85">85%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:85%;"></div></div></li>
+    <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Lab Tools & Fabrication</h5><data value="80">80%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:80%;"></div></div></li>
+  </ul>
+</section>
+
+<section class="skill">
+  <h3 class="h3 skills-title">Languages</h3>
+  <ul class="skills-list content-card">
+    <li class="skills-item"><div class="title-wrapper"><h5 class="h5">English</h5><data value="95">95%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:95%;"></div></div></li>
+    <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Spanish</h5><data value="40">40%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:40%;"></div></div></li>
+    <li class="skills-item"><div class="title-wrapper"><h5 class="h5">Persian</h5><data value="100">100%</data></div><div class="skill-progress-bg"><div class="skill-progress-fill" style="width:100%;"></div></div></li>
+  </ul>
+</section>
+
+<section class="timeline">
+  <div class="title-wrapper"><div class="icon-box"><ion-icon name="people-outline"></ion-icon></div><h3 class="h3">Community Service</h3></div>
+  <ol class="timeline-list">
+    <li class="timeline-item"><h4 class="h4 timeline-item-title">Reviewer, IEEE ISCAS 2024</h4></li>
+    <li class="timeline-item"><h4 class="h4 timeline-item-title">Member, IEEE CAS Society (2021–2024)</h4></li>
+    <li class="timeline-item"><h4 class="h4 timeline-item-title">Organizer, European Researchers’ Night & CiTIUS events</h4></li>
+  </ol>
+</section>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
       <article class="portfolio" data-page="publications">
-        <header><h2 class="h2 article-title">Publications</h2></header>
+
+        <header>
+          <h2 class="h2 article-title">Publications</h2>
+        </header>
+
         <section class="projects">
-          <ul class="project-list">
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-1.jpg"></figure><h3 class="project-title">On-Chip Resonant Frequency Modulation for Low-Power Indirect ToF Sensors — In Preparation (2025)</h3><p class="project-category">Publication</p></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-2.png"></figure><h3 class="project-title">Single-Shot Transient Imaging via Compressed ToF and Dictionary Learning — ICIP (2025)</h3><p class="project-category">Publication</p></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-3.jpg"></figure><h3 class="project-title">RGBZ CMOS Image Sensor for Multi-Frequency Depth Acquisition — CoSeRa (2024)</h3><p class="project-category">Publication</p></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-4.png"></figure><h3 class="project-title">Simultaneous Multi-frequency Demodulation for Single-shot Multi-path ToF Imaging — IEEE TCI (2023)</h3><p class="project-category">Publication</p></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-5.png"></figure><h3 class="project-title">Fast Time-Domain Super-Resolution for ToF Imaging — IEEE ICECS (2022)</h3><p class="project-category">Publication</p></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-6.png"></figure><h3 class="project-title">A 2-Tap Macro-Pixel-Based Indirect ToF CIS — IEEE ISCAS (2022)</h3><p class="project-category">Publication</p></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-7.png"></figure><h3 class="project-title">Proposal of Multi-Frequency CMOS ToF Sensor — IEEE ICECS (2021)</h3><p class="project-category">Publication</p></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-8.jpg"></figure><h3 class="project-title">Performance of PDMS-Based Stretchable Electrodes — IEEE ICEE (2020)</h3><p class="project-category">Publication</p></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-9.png"></figure><h3 class="project-title">Highly Conformable Stretchable Dry Electrodes — Sensors & Actuators A (2019)</h3><p class="project-category">Publication</p></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-3.jpg"></figure><h3 class="project-title">Stretchable Interconnects Embedded in Elastomers — IEEE ICEE (2018)</h3><p class="project-category">Publication</p></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-5.png"></figure><h3 class="project-title">Book Chapter: 2-Tap Indirect ToF CMOS Image Sensor — ATHENA Research Book (2022)</h3><p class="project-category">Publication</p></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-6.png"></figure><h3 class="project-title">Patent: Stretchable EMG Signal Electrode — Patent No. 30/07147 (2019)</h3><p class="project-category">Publication</p></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-7.png"></figure><h3 class="project-title">Patent: Flexible Polymeric ECG Electrode — Patent No. 30/07146 (2019)</h3><p class="project-category">Publication</p></a></li>
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
           </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+    <li class="project-item active" data-filter-item data-category="publication">
+      <a href="#">
+        <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+        <img src="./assets/images/project-1.jpg" alt="pub-0" loading="lazy"></figure>
+        <h3 class="project-title">On-Chip Resonant Frequency Modulation for Low-Power Indirect ToF Sensors — In Preparation (2025)</h3>
+        <p class="project-category">Publication</p>
+      </a>
+    </li>
+    
+    <li class="project-item active" data-filter-item data-category="publication">
+      <a href="#">
+        <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+        <img src="./assets/images/project-2.png" alt="pub-1" loading="lazy"></figure>
+        <h3 class="project-title">Single-Shot Transient Imaging via Compressed ToF and Dictionary Learning — ICIP (2025)</h3>
+        <p class="project-category">Publication</p>
+      </a>
+    </li>
+    
+    <li class="project-item active" data-filter-item data-category="publication">
+      <a href="#">
+        <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+        <img src="./assets/images/project-3.jpg" alt="pub-2" loading="lazy"></figure>
+        <h3 class="project-title">RGBZ CMOS Image Sensor for Multi-Frequency Depth Acquisition — CoSeRa (2024)</h3>
+        <p class="project-category">Publication</p>
+      </a>
+    </li>
+    
+    <li class="project-item active" data-filter-item data-category="publication">
+      <a href="#">
+        <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+        <img src="./assets/images/project-4.png" alt="pub-3" loading="lazy"></figure>
+        <h3 class="project-title">Simultaneous Multi-frequency Demodulation for Single-shot Multi-path ToF Imaging — IEEE TCI (2023)</h3>
+        <p class="project-category">Publication</p>
+      </a>
+    </li>
+    
+    <li class="project-item active" data-filter-item data-category="publication">
+      <a href="#">
+        <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+        <img src="./assets/images/project-5.png" alt="pub-4" loading="lazy"></figure>
+        <h3 class="project-title">Fast Time-Domain Super-Resolution for ToF Imaging — IEEE ICECS (2022)</h3>
+        <p class="project-category">Publication</p>
+      </a>
+    </li>
+    
+    <li class="project-item active" data-filter-item data-category="publication">
+      <a href="#">
+        <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+        <img src="./assets/images/project-6.png" alt="pub-5" loading="lazy"></figure>
+        <h3 class="project-title">A 2-Tap Macro-Pixel-Based Indirect ToF CIS — IEEE ISCAS (2022)</h3>
+        <p class="project-category">Publication</p>
+      </a>
+    </li>
+    
+    <li class="project-item active" data-filter-item data-category="publication">
+      <a href="#">
+        <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+        <img src="./assets/images/project-7.png" alt="pub-6" loading="lazy"></figure>
+        <h3 class="project-title">Proposal of Multi-Frequency CMOS ToF Sensor — IEEE ICECS (2021)</h3>
+        <p class="project-category">Publication</p>
+      </a>
+    </li>
+    
+    <li class="project-item active" data-filter-item data-category="publication">
+      <a href="#">
+        <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+        <img src="./assets/images/project-8.jpg" alt="pub-7" loading="lazy"></figure>
+        <h3 class="project-title">Performance of PDMS-Based Stretchable Electrodes — IEEE ICEE (2020)</h3>
+        <p class="project-category">Publication</p>
+      </a>
+    </li>
+    
+    <li class="project-item active" data-filter-item data-category="publication">
+      <a href="#">
+        <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+        <img src="./assets/images/project-9.png" alt="pub-8" loading="lazy"></figure>
+        <h3 class="project-title">Highly Conformable Stretchable Dry Electrodes — Sensors & Actuators A (2019)</h3>
+        <p class="project-category">Publication</p>
+      </a>
+    </li>
+    
+    <li class="project-item active" data-filter-item data-category="publication">
+      <a href="#">
+        <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+        <img src="./assets/images/project-1.jpg" alt="pub-9" loading="lazy"></figure>
+        <h3 class="project-title">Stretchable Interconnects Embedded in Elastomers — IEEE ICEE (2018)</h3>
+        <p class="project-category">Publication</p>
+      </a>
+    </li>
+    
+    <li class="project-item active" data-filter-item data-category="publication">
+      <a href="#">
+        <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+        <img src="./assets/images/project-2.png" alt="pub-10" loading="lazy"></figure>
+        <h3 class="project-title">Book Chapter: 2-Tap Indirect ToF CMOS Image Sensor — ATHENA Research Book (2022)</h3>
+        <p class="project-category">Publication</p>
+      </a>
+    </li>
+    
+    <li class="project-item active" data-filter-item data-category="publication">
+      <a href="#">
+        <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+        <img src="./assets/images/project-3.jpg" alt="pub-11" loading="lazy"></figure>
+        <h3 class="project-title">Patent: Stretchable EMG Signal Electrode — Patent No. 30/07147 (2019)</h3>
+        <p class="project-category">Publication</p>
+      </a>
+    </li>
+    
+    <li class="project-item active" data-filter-item data-category="publication">
+      <a href="#">
+        <figure class="project-img"><div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+        <img src="./assets/images/project-4.png" alt="pub-12" loading="lazy"></figure>
+        <h3 class="project-title">Patent: Flexible Polymeric ECG Electrode — Patent No. 30/07146 (2019)</h3>
+        <p class="project-category">Publication</p>
+      </a>
+    </li>
+    </ul>
+
         </section>
+
       </article>
 
-            <!-- PROJECTS -->
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
       <article class="blog" data-page="projects">
-        <header><h2 class="h2 article-title">Projects</h2></header>
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
         <section class="blog-posts">
+
           <ul class="blog-posts-list">
-            <li class="blog-post-item"><a href="#"><figure class="blog-banner-box"><img src="./assets/images/blog-1.jpg"></figure><div class="blog-content"><div class="blog-meta"><p class="blog-category">Project</p><span class="dot"></span><time datetime="2025-01-01">Updated 2025</time></div><h3 class="h3 blog-item-title">Low-power 6-Transistor SRAM Cell</h3><p class="blog-text">Simulation and analysis in 180 nm CMOS (2017).</p></div></a></li>
-            <li class="blog-post-item"><a href="#"><figure class="blog-banner-box"><img src="./assets/images/blog-2.jpg"></figure><div class="blog-content"><div class="blog-meta"><p class="blog-category">Project</p><span class="dot"></span><time datetime="2025-01-01">Updated 2025</time></div><h3 class="h3 blog-item-title">High Efficiency Solar Cell Design</h3><p class="blog-text">Silvaco ATLAS modeling of high-efficiency cells (2017).</p></div></a></li>
-            <li class="blog-post-item"><a href="#"><figure class="blog-banner-box"><img src="./assets/images/blog-3.jpg"></figure><div class="blog-content"><div class="blog-meta"><p class="blog-category">Project</p><span class="dot"></span><time datetime="2025-01-01">Updated 2025</time></div><h3 class="h3 blog-item-title">Opto-Electronic Mixer with HBT</h3><p class="blog-text">Cascade mixer simulation and characterization (2017).</p></div></a></li>
-            <li class="blog-post-item"><a href="#"><figure class="blog-banner-box"><img src="./assets/images/blog-4.jpg"></figure><div class="blog-content"><div class="blog-meta"><p class="blog-category">Project</p><span class="dot"></span><time datetime="2025-01-01">Updated 2025</time></div><h3 class="h3 blog-item-title">GAA Junctionless Nanowire Transistor</h3><p class="blog-text">Quantum charge-based modeling in Silvaco (2016).</p></div></a></li>
-            <li class="blog-post-item"><a href="#"><figure class="blog-banner-box"><img src="./assets/images/blog-5.jpg"></figure><div class="blog-content"><div class="blog-meta"><p class="blog-category">Project</p><span class="dot"></span><time datetime="2025-01-01">Updated 2025</time></div><h3 class="h3 blog-item-title">Piezoresistive Pressure Sensor</h3><p class="blog-text">COMSOL-based optimal design study (2016).</p></div></a></li>
-            <li class="blog-post-item"><a href="#"><figure class="blog-banner-box"><img src="./assets/images/blog-6.jpg"></figure><div class="blog-content"><div class="blog-meta"><p class="blog-category">Project</p><span class="dot"></span><time datetime="2025-01-01">Updated 2025</time></div><h3 class="h3 blog-item-title">ALU Design in PROTEUS</h3><p class="blog-text">Designing a simple ALU (2014).</p></div></a></li>
-          </ul>
+    <li class="blog-post-item"><a href="#"><figure class="blog-banner-box"><img src="./assets/images/blog-1.jpg" alt="Low-power 6-Transistor SRAM Cell" loading="lazy"></figure>
+    <div class="blog-content"><div class="blog-meta"><p class="blog-category">Project</p><span class="dot"></span><time datetime="2025-01-01">Updated 2025</time></div>
+    <h3 class="h3 blog-item-title">Low-power 6-Transistor SRAM Cell</h3><p class="blog-text">Simulation and analysis in 180 nm CMOS (2017).</p></div></a></li>
+    
+    <li class="blog-post-item"><a href="#"><figure class="blog-banner-box"><img src="./assets/images/blog-2.jpg" alt="High Efficiency Solar Cell Design" loading="lazy"></figure>
+    <div class="blog-content"><div class="blog-meta"><p class="blog-category">Project</p><span class="dot"></span><time datetime="2025-01-01">Updated 2025</time></div>
+    <h3 class="h3 blog-item-title">High Efficiency Solar Cell Design</h3><p class="blog-text">Silvaco ATLAS modeling of high-efficiency cells (2017).</p></div></a></li>
+    
+    <li class="blog-post-item"><a href="#"><figure class="blog-banner-box"><img src="./assets/images/blog-3.jpg" alt="Opto-Electronic Mixer with HBT" loading="lazy"></figure>
+    <div class="blog-content"><div class="blog-meta"><p class="blog-category">Project</p><span class="dot"></span><time datetime="2025-01-01">Updated 2025</time></div>
+    <h3 class="h3 blog-item-title">Opto-Electronic Mixer with HBT</h3><p class="blog-text">Cascade mixer simulation and characterization (2017).</p></div></a></li>
+    
+    <li class="blog-post-item"><a href="#"><figure class="blog-banner-box"><img src="./assets/images/blog-4.jpg" alt="GAA Junctionless Nanowire Transistor" loading="lazy"></figure>
+    <div class="blog-content"><div class="blog-meta"><p class="blog-category">Project</p><span class="dot"></span><time datetime="2025-01-01">Updated 2025</time></div>
+    <h3 class="h3 blog-item-title">GAA Junctionless Nanowire Transistor</h3><p class="blog-text">Quantum charge-based modeling in Silvaco (2016).</p></div></a></li>
+    
+    <li class="blog-post-item"><a href="#"><figure class="blog-banner-box"><img src="./assets/images/blog-5.jpg" alt="Piezoresistive Pressure Sensor" loading="lazy"></figure>
+    <div class="blog-content"><div class="blog-meta"><p class="blog-category">Project</p><span class="dot"></span><time datetime="2025-01-01">Updated 2025</time></div>
+    <h3 class="h3 blog-item-title">Piezoresistive Pressure Sensor</h3><p class="blog-text">COMSOL-based optimal design study (2016).</p></div></a></li>
+    
+    <li class="blog-post-item"><a href="#"><figure class="blog-banner-box"><img src="./assets/images/blog-6.jpg" alt="ALU Design in PROTEUS" loading="lazy"></figure>
+    <div class="blog-content"><div class="blog-meta"><p class="blog-category">Project</p><span class="dot"></span><time datetime="2025-01-01">Updated 2025</time></div>
+    <h3 class="h3 blog-item-title">ALU Design in PROTEUS</h3><p class="blog-text">Designing a simple ALU (2014).</p></div></a></li>
+    </ul>
+
         </section>
+
       </article>
 
-      <!-- GALLERY -->
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
       <article class="contact" data-page="gallery">
-        <header><h2 class="h2 article-title">Gallery</h2></header>
-        <section class="projects">
-          <ul class="project-list">
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-7.png" alt="Gallery 1" loading="lazy"></figure></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-8.jpg" alt="Gallery 2" loading="lazy"></figure></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-9.png" alt="Gallery 3" loading="lazy"></figure></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-3.jpg" alt="Gallery 4" loading="lazy"></figure></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-5.png" alt="Gallery 5" loading="lazy"></figure></a></li>
-            <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-6.png" alt="Gallery 6" loading="lazy"></figure></a></li>
-          </ul>
-        </section>
+
+        <header>
+          <h2 class="h2 article-title">Gallery</h2>
+        </header>
+
+        
+<section class="projects">
+  <ul class="project-list">
+    <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-7.png" alt="Gallery 1" loading="lazy"></figure></a></li>
+    <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-8.jpg" alt="Gallery 2" loading="lazy"></figure></a></li>
+    <li class="project-item active"><a href="#"><figure class="project-img"><img src="./assets/images/project-9.png" alt="Gallery 3" loading="lazy"></figure></a></li>
+  </ul>
+</section>
+
+
       </article>
+
     </div>
+
   </main>
 
-  <!-- Scripts -->
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
   <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
