@@ -1880,31 +1880,3 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
-
-
-/* ==========================
-   Custom modifications
-   ========================== */
-
-/* Make sidebar wider */
-.sidebar, article {
-  width: 1100px !important;
-}
-
-/* Enlarge avatar image */
-.avatar-box img {
-  width: 180px !important;
-  height: auto !important;
-}
-
-/* Allow long name to wrap on two lines */
-.info-content .name {
-  white-space: normal !important;
-  text-align: center;
-  line-height: 1.2;
-}
-
-/* Show full email instead of truncating */
-.contact-info .contact-link {
-  white-space: normal !important;
-}
