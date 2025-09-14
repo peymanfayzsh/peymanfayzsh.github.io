@@ -1998,11 +1998,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 /* ===== Projects Row Card Fix ===== */
-.blog[data-page="projects"] .project-item a {
+.blog[data-page="project"] .project-item a {
   display: block;  /* reset to block so link works fully */
 }
 
-.blog[data-page="projects"] .proj-card {
+.blog[data-page="project"] .proj-card {
   display: flex;                /* make row layout */
   flex-direction: row;           /* horizontal */
   align-items: flex-start;       /* align text at top */
@@ -2015,22 +2015,22 @@ textarea.form-input::-webkit-resizer { display: none; }
   width: 100%;
 }
 
-.blog[data-page="projects"] .proj-image {
+.blog[data-page="project"] .proj-image {
   flex: 0 0 320px;   /* large thumbnail like Publications */
 }
 
-.blog[data-page="projects"] .proj-image img {
+.blog[data-page="project"] .proj-image img {
   width: 100%;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
 }
 
-.blog[data-page="projects"] .proj-content {
+.blog[data-page="project"] .proj-content {
   flex: 1;                       /* take rest of row */
 }
 
-.blog[data-page="projects"] .proj-title {
+.blog[data-page="project"] .proj-title {
   font-size: 18px;   /* bigger font */
   font-weight: 600;
   margin: 0 0 8px;
@@ -2038,19 +2038,19 @@ textarea.form-input::-webkit-resizer { display: none; }
   line-height: 1.5;
 }
 
-.blog[data-page="projects"] .proj-meta {
+.blog[data-page="project"] .proj-meta {
   font-size: 15px;
   color: #aaa;
   margin: 0;
 }
 
 /* Full width rows */
-.blog[data-page="projects"] .project-list {
+.blog[data-page="project"] .project-list {
   display: block;
   width: 100%;
 }
 
-.blog[data-page="projects"] .project-item {
+.blog[data-page="project"] .project-item {
   width: 100%;
   margin-bottom: 16px;
 }
