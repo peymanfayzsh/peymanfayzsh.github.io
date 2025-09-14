@@ -1989,3 +1989,65 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin: 0;
 }
 
+
+
+
+
+
+
+
+
+/* ===== Projects Row Card Style ===== */
+.blog[data-page="projects"] .blog-posts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.blog[data-page="projects"] .blog-post-item a {
+  display: block;
+}
+
+.blog[data-page="projects"] .proj-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  background: var(--eerie-black-2); /* same as About cards */
+  border: 1px solid var(--jet);
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.blog[data-page="projects"] .proj-image {
+  flex: 0 0 320px; /* big thumbnail like Publications */
+}
+
+.blog[data-page="projects"] .proj-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.blog[data-page="projects"] .proj-content {
+  flex: 1;
+}
+
+.blog[data-page="projects"] .proj-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.blog[data-page="projects"] .proj-meta {
+  font-size: 15px;
+  color: #aaa;
+  margin: 0;
+}
