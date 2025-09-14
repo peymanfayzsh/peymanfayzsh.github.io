@@ -1996,21 +1996,27 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-/* ===== Projects Row Card Style (same as Publications) ===== */
+
+/* ===== Projects Row Card Fix ===== */
+.blog[data-page="projects"] .project-item a {
+  display: block;  /* reset to block so link works fully */
+}
+
 .blog[data-page="projects"] .proj-card {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 20px;
-  background: var(--eerie-black-2);
-  border: 1px solid var(--jet);
+  display: flex;                /* make row layout */
+  flex-direction: row;           /* horizontal */
+  align-items: flex-start;       /* align text at top */
+  gap: 20px;                     /* space between image & text */
+  background: var(--eerie-black-2);   /* same box color as About cards */
+  border: 1px solid var(--jet);       /* subtle border */
   padding: 18px;
   border-radius: 14px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  width: 100%;
 }
 
 .blog[data-page="projects"] .proj-image {
-  flex: 0 0 320px;  /* big image */
+  flex: 0 0 320px;   /* large thumbnail like Publications */
 }
 
 .blog[data-page="projects"] .proj-image img {
@@ -2021,11 +2027,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .blog[data-page="projects"] .proj-content {
-  flex: 1;
+  flex: 1;                       /* take rest of row */
 }
 
 .blog[data-page="projects"] .proj-title {
-  font-size: 18px;
+  font-size: 18px;   /* bigger font */
   font-weight: 600;
   margin: 0 0 8px;
   color: #fff;
@@ -2037,4 +2043,21 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: #aaa;
   margin: 0;
 }
+
+/* Full width rows */
+.blog[data-page="projects"] .project-list {
+  display: block;
+  width: 100%;
+}
+
+.blog[data-page="projects"] .project-item {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+
+
+
+
+
 
