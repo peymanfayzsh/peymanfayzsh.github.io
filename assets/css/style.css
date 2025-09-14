@@ -1989,6 +1989,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin: 0;
 }
 
+/* ===== Highlight Author Name ===== */
+.pub-meta .highlight {
+  color: var(--vegas-gold);  /* same yellow shade as Resume */
+  font-weight: 500;
+}
 
 
 
