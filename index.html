@@ -611,9 +611,24 @@ My goal is to combine innovative device design with signal processing to develop
 
   <section class="projects">
 
+    <!-- Keep filter bar so the theme JS doesn't break -->
+    <ul class="filter-list">
+      <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+    </ul>
+
+    <div class="filter-select-box">
+      <button class="filter-select" data-select>
+        <div class="select-value" data-selecct-value>All</div>
+        <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+      </button>
+      <ul class="select-list">
+        <li class="select-item"><button data-select-item>All</button></li>
+      </ul>
+    </div>
+
     <ul class="project-list">
 
-      <!-- In Preparation -->
+      <!-- In preparation (conf.) -->
       <li class="project-item active" data-filter-item data-category="publication">
         <a href="#">
           <div class="pub-card">
@@ -621,18 +636,19 @@ My goal is to combine innovative device design with signal processing to develop
             <div class="pub-content">
               <h3 class="pub-title">On-Chip Resonant Frequency Modulation for Low-Power Indirect ToF Sensors</h3>
               <p class="pub-meta"><span class="highlight">P. Fayyaz Shahandashti</span> et al.</p>
-              <p class="pub-meta"><em>In Preparation, 2025</em></p>
+              <p class="pub-meta"><em>In preparation, 2025</em></p>
             </div>
           </div>
         </a>
       </li>
 
+      <!-- ICIP Workshop 2025 -->
       <li class="project-item active" data-filter-item data-category="publication">
         <a href="#">
           <div class="pub-card">
             <div class="pub-image"><img src="./assets/images/project-2.png" alt="Single-Shot Transient Imaging"></div>
             <div class="pub-content">
-              <h3 class="pub-title">Single-Shot Transient Imaging via Compressed ToF & Dictionary Learning</h3>
+              <h3 class="pub-title">Single-Shot Transient Imaging via Compressed ToF &amp; Dictionary Learning</h3>
               <p class="pub-meta"><span class="highlight">P. Fayyaz Shahandashti</span>, P. López, V. M. Brea, D. García-Lesta, M. H. Conde</p>
               <p class="pub-meta"><em>ICIP Workshop, 2025</em></p>
             </div>
@@ -640,6 +656,7 @@ My goal is to combine innovative device design with signal processing to develop
         </a>
       </li>
 
+      <!-- CoSeRa 2024 -->
       <li class="project-item active" data-filter-item data-category="publication">
         <a href="#">
           <div class="pub-card">
@@ -653,6 +670,7 @@ My goal is to combine innovative device design with signal processing to develop
         </a>
       </li>
 
+      <!-- IEEE TCI 2023 -->
       <li class="project-item active" data-filter-item data-category="publication">
         <a href="#">
           <div class="pub-card">
@@ -660,12 +678,13 @@ My goal is to combine innovative device design with signal processing to develop
             <div class="pub-content">
               <h3 class="pub-title">Simultaneous Multi-frequency Demodulation for Single-shot Multi-path ToF Imaging</h3>
               <p class="pub-meta"><span class="highlight">P. Fayyaz Shahandashti</span>, P. López, V. M. Brea, D. García-Lesta, M. H. Conde</p>
-              <p class="pub-meta"><em>IEEE Transactions on Computational Imaging, 2023</em></p>
+              <p class="pub-meta"><em>IEEE Transactions on Computational Imaging (TCI), 2023</em></p>
             </div>
           </div>
         </a>
       </li>
 
+      <!-- ICECS 2022 -->
       <li class="project-item active" data-filter-item data-category="publication">
         <a href="#">
           <div class="pub-card">
@@ -679,12 +698,13 @@ My goal is to combine innovative device design with signal processing to develop
         </a>
       </li>
 
+      <!-- ISCAS 2022 -->
       <li class="project-item active" data-filter-item data-category="publication">
         <a href="#">
           <div class="pub-card">
             <div class="pub-image"><img src="./assets/images/project-6.png" alt="2-Tap ToF CIS"></div>
             <div class="pub-content">
-              <h3 class="pub-title">A 2-Tap Macro-Pixel-Based Indirect ToF CIS</h3>
+              <h3 class="pub-title">A 2-Tap Macro-Pixel-Based Indirect ToF CMOS Image Sensor</h3>
               <p class="pub-meta"><span class="highlight">P. Fayyaz Shahandashti</span>, P. López, V. M. Brea, D. García-Lesta, M. H. Conde</p>
               <p class="pub-meta"><em>IEEE ISCAS, 2022</em></p>
             </div>
@@ -692,6 +712,7 @@ My goal is to combine innovative device design with signal processing to develop
         </a>
       </li>
 
+      <!-- ICECS 2021 -->
       <li class="project-item active" data-filter-item data-category="publication">
         <a href="#">
           <div class="pub-card">
@@ -705,6 +726,7 @@ My goal is to combine innovative device design with signal processing to develop
         </a>
       </li>
 
+      <!-- ICEE 2020 -->
       <li class="project-item active" data-filter-item data-category="publication">
         <a href="#">
           <div class="pub-card">
@@ -718,6 +740,7 @@ My goal is to combine innovative device design with signal processing to develop
         </a>
       </li>
 
+      <!-- Sensors & Actuators A 2019 -->
       <li class="project-item active" data-filter-item data-category="publication">
         <a href="#">
           <div class="pub-card">
@@ -725,12 +748,13 @@ My goal is to combine innovative device design with signal processing to develop
             <div class="pub-content">
               <h3 class="pub-title">Highly Conformable Stretchable Dry Electrodes for EMG/ECG</h3>
               <p class="pub-meta"><span class="highlight">P. Fayyaz Shahandashti</span>, H. Pourkheyrollah, A. Jahanshahi, H. Ghafoorifard</p>
-              <p class="pub-meta"><em>Sensors & Actuators A, 2019</em></p>
+              <p class="pub-meta"><em>Sensors &amp; Actuators A: Physical, 2019</em></p>
             </div>
           </div>
         </a>
       </li>
 
+      <!-- ICEE 2018 -->
       <li class="project-item active" data-filter-item data-category="publication">
         <a href="#">
           <div class="pub-card">
@@ -744,6 +768,7 @@ My goal is to combine innovative device design with signal processing to develop
         </a>
       </li>
 
+      <!-- Book chapter 2022 -->
       <li class="project-item active" data-filter-item data-category="publication">
         <a href="#">
           <div class="pub-card">
@@ -757,6 +782,7 @@ My goal is to combine innovative device design with signal processing to develop
         </a>
       </li>
 
+      <!-- Patents 2019 -->
       <li class="project-item active" data-filter-item data-category="publication">
         <a href="#">
           <div class="pub-card">
@@ -786,6 +812,7 @@ My goal is to combine innovative device design with signal processing to develop
     </ul>
   </section>
 </article>
+
 
 
 
