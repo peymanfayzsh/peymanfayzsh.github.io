@@ -2051,3 +2051,55 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: #aaa;
   margin: 0;
 }
+
+/* ===== Projects Row Card Style (scoped & safe) ===== */
+.blog[data-page="projects"] .blog-posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blog[data-page="projects"] .blog-post-item a {
+  display: flex;
+  gap: 20px;
+  background: var(--eerie-black-2); /* same as About cards */
+  border: 1px solid var(--jet);
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  text-decoration: none;
+}
+
+.blog[data-page="projects"] .blog-banner-box {
+  flex: 0 0 320px;        /* big thumbnail, matches Publications */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.blog[data-page="projects"] .blog-banner-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.blog[data-page="projects"] .blog-content {
+  flex: 1;
+}
+
+.blog[data-page="projects"] .blog-item-title {
+  font-size: 18px;        /* bigger, like Publications */
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.blog[data-page="projects"] .blog-text {
+  font-size: 15px;
+  color: #aaa;
+  margin: 0;
+}
