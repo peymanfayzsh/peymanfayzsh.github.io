@@ -2061,7 +2061,17 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
-
+/* ===== Allow videos in publications and projects ===== */
+.pub-image img,
+.pub-image video,
+.proj-image img,
+.proj-image video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
 
 
 
