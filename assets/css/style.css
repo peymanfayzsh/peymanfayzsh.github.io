@@ -2073,6 +2073,16 @@ textarea.form-input::-webkit-resizer { display: none; }
   display: block;
 }
 
+/* ===== Custom link style for dark theme ===== */
+a {
+  color: var(--white-1);        /* makes links white */
+  text-decoration: underline;   /* adds underline */
+}
+
+a:hover {
+  color: var(--orange-yellow-crayola);  /* soft yellow on hover */
+}
+
 
 
 
