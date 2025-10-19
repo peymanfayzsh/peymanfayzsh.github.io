@@ -2146,5 +2146,9 @@ a:focus {
   display: inline;
 }
 
+/* ===== Fix for navbar buttons being unclickable ===== */
+.navbar-link {
+  display: inline-block !important;
+}
 
 
