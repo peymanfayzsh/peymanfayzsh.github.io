@@ -2140,9 +2140,13 @@ a:focus {
 }
 
 
-
 /* Make inline text links behave normally inside paragraphs */
 .about-text a {
+  display: inline;
+}
+
+/* Make inline text links behave normally inside paragraphs */
+.news-text a {
   display: inline;
 }
 
