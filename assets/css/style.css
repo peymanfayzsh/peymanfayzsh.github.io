@@ -2130,25 +2130,22 @@ textarea.form-input::-webkit-resizer { display: none; }
 /* Custom link style for dark theme */
 a,
 a:visited {
-  color: var(--white-1);
+  color: #66ccff;           /* light blue link color */
   text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  color: var(--orange-yellow-crayola);
+  color: #99e0ff;           /* lighter blue on hover */
 }
 
-
-/* Make inline text links behave normally inside paragraphs */
-.about-text a {
+/* Keep inline layout inside About and News sections */
+.about-text a,
+.news-item a {
   display: inline;
 }
 
-/* Make inline text links behave normally inside paragraphs */
-.news-text a {
-  display: inline;
-}
+
 
 /* ===== Fix for navbar buttons being unclickable ===== */
 .navbar-link {
