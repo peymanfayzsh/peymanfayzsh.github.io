@@ -760,6 +760,59 @@ main {
 
 
 
+
+
+/* ===== News Section ===== */
+.news {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.news-title {
+  margin-bottom: 20px;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.news-item time {
+  color: var(--vegas-gold);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.news-item p {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  line-height: 1.6;
+}
+
+.news-item a {
+  color: var(--orange-yellow-crayola);
+  text-decoration: underline;
+}
+
+.news-item a:hover {
+  color: var(--white-1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-----------------------------------*\
   #RESUME
 \*-----------------------------------*/
