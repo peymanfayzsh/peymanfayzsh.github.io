@@ -2126,3 +2126,12 @@ a:focus {
 }
 
 
+/* Keep publication author lines in one continuous line */
+.portfolio[data-page="publication"] .pub-meta {
+  display: inline-block;
+  white-space: normal;
+}
+
+.portfolio[data-page="publication"] .pub-meta em {
+  display: inline;
+}
