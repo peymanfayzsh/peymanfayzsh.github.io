@@ -1937,84 +1937,32 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
+/* ===== Publication Section (Final Clean Version) ===== */
 
-
-
-/* ===== Publications Row Card Fix ===== */
-.portfolio[data-page="publication"] .project-item a {
-  display: block;  /* reset to block so link works fully */
-}
-
-.portfolio[data-page="publication"] .pub-card {
-  display: flex;                /* make row layout */
-  flex-direction: row;           /* horizontal */
-  align-items: flex-start;       /* align text at top */
-  gap: 12px;                     /* space between image & text */
-  background: #1e1e1f;
-  padding: 12px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-.portfolio[data-page="publication"] .pub-image {
-  flex: 0 0 80px;                /* fixed thumbnail width */
-}
-
-.portfolio[data-page="publication"] .pub-image img {
-  width: 80px;                   /* thumbnail smaller */
-  height: auto;
-  border-radius: 6px;
-  object-fit: cover;
-}
-
-.portfolio[data-page="publication"] .pub-content {
-  flex: 1;                       /* take rest of row */
-}
-
-.portfolio[data-page="publication"] .pub-title {
-  font-size: 15px;
-  font-weight: 500;
-  margin: 0 0 4px;
-  color: #fff;
-  line-height: 1.4;
-}
-
-.portfolio[data-page="publication"] .pub-meta {
-  font-size: 13px;
-  color: #aaa;
-  margin: 0;
-}
-
-/* ===== Publications Full Width ===== */
 .portfolio[data-page="publication"] .project-list {
-  display: block;          /* remove grid/flexbox from template */
+  display: block;
   width: 100%;
 }
 
 .portfolio[data-page="publication"] .project-item {
-  width: 100%;             /* each item spans full width */
+  width: 100%;
   margin-bottom: 16px;
 }
 
-.portfolio[data-page="publication"] .pub-card {
-  width: 100%;             /* card fills container */
-}
-
-/* ===== Publications Styled like "What I'm Doing" ===== */
 .portfolio[data-page="publication"] .pub-card {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 20px;
-  background: var(--eerie-black-2);   /* same box color as service cards */
-  border: 1px solid var(--jet);       /* subtle border like About boxes */
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
   padding: 18px;
   border-radius: 14px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.25);
 }
 
 .portfolio[data-page="publication"] .pub-image {
-  flex: 0 0 320px;   /* 4x bigger than before (80px → 320px) */
+  flex: 0 0 260px;
 }
 
 .portfolio[data-page="publication"] .pub-image img {
@@ -2029,30 +1977,56 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .portfolio[data-page="publication"] .pub-title {
-  font-size: 18px;   /* bigger font */
+  font-size: 18px;
   font-weight: 600;
   margin: 0 0 8px;
-  color: #fff;
-  line-height: 1.5;
+  color: var(--white-1);
+  line-height: 1.4;
 }
 
 .portfolio[data-page="publication"] .pub-meta {
-  font-size: 15px;   /* slightly bigger */
-  color: #aaa;
-  margin: 0;
+  font-size: 15px;
+  color: var(--light-gray);
+  margin: 2px 0;
+  display: inline;
 }
+
+/* highlight your name only */
+.portfolio[data-page="publication"] .highlight {
+  color: var(--vegas-gold);
+  font-weight: 500;
+}
+
+/* Paper link styling */
+.pub-link {
+  margin-top: 6px;
+}
+
+.pub-link a {
+  color: #66ccff;  /* light blue */
+  text-decoration: underline;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--fs-6);
+}
+
+.pub-link a:hover {
+  color: #99e0ff;
+}
+
+.pub-link ion-icon {
+  color: var(--orange-yellow-crayola);
+  font-size: 18px;
+  vertical-align: middle;
+}
+
 
 /* ===== Highlight Author Name ===== */
 .pub-meta .highlight {
   color: var(--vegas-gold);  /* same yellow shade as Resume */
   font-weight: 500;
 }
-
-
-
-
-
-
 
 
 /* ===== Projects Row Card Fix ===== */
@@ -2144,7 +2118,6 @@ a:focus {
 .news-item a {
   display: inline;
 }
-
 
 
 /* ===== Fix for navbar buttons being unclickable ===== */
