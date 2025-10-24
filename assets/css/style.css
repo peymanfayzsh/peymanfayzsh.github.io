@@ -2140,3 +2140,36 @@ a:focus {
   white-space: nowrap;
 }
 
+
+/* ===== Awards & Honors Fix ===== */
+
+/* Make award title bold and white */
+.timeline-item .award-title {
+  color: var(--white-1);
+  font-weight: 600;
+}
+
+/* Keep links inline, light blue, non-bold */
+.timeline-item a {
+  display: inline;
+  color: #66ccff;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-left: 4px;
+}
+
+.timeline-item a:hover {
+  color: #99e0ff;
+}
+
+/* Fine-tune spacing and text color for descriptions */
+.timeline-item .timeline-item-title {
+  font-weight: 400;
+  color: var(--light-gray);
+  line-height: 1.6;
+}
+
+.timeline-item span {
+  color: var(--vegas-gold);
+  font-weight: 500;
+}
