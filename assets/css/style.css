@@ -2186,13 +2186,15 @@ a:focus {
   font-weight: 600;
   line-height: 1.4;
   margin-bottom: 4px;
+  display: block;              /* each on its own line */
 }
 
 .timeline-item .pub-detail {
   color: var(--vegas-gold);
   font-weight: 400;
   line-height: 1.5;
-  margin: 0 0 2px 0;
+  margin: 0 0 4px 0;
+  display: block;              /* separate line */
 }
 
 .timeline-item .pub-authors {
@@ -2200,20 +2202,20 @@ a:focus {
   font-weight: 400;
   line-height: 1.5;
   margin: 0;
+  display: block;              /* separate line */
 }
 
 /* Highlight your own name */
 .timeline-item .highlight-name {
   color: var(--vegas-gold);
   font-weight: 500;
+  display: inline;             /* inline within author list */
 }
 
-/* Keep all elements inline and prevent weird breaks */
+/* Remove old inline forcing */
 .timeline-item .pub-title,
 .timeline-item .pub-detail,
-.timeline-item .pub-authors,
-.timeline-item .highlight-name {
-  display: inline;
+.timeline-item .pub-authors {
   white-space: normal;
 }
 
