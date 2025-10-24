@@ -2223,3 +2223,32 @@ a:focus {
 .timeline + .timeline {
   margin-top: 30px;
 }
+
+
+/* ===== Selected Projects Section ===== */
+
+/* Project title (bold white) */
+.timeline-item .timeline-item-title {
+  color: var(--white-1);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Project details (gray text) */
+.timeline-item .project-detail {
+  color: var(--light-gray);
+  font-weight: 400;
+}
+
+/* Ensure inline flow (no line breaks between title & details) */
+.timeline-item .timeline-item-title,
+.timeline-item .project-detail {
+  display: inline;
+  white-space: normal;
+}
+
+/* Date (gold color) */
+.timeline-item span {
+  color: var(--vegas-gold);
+  font-weight: 500;
+}
