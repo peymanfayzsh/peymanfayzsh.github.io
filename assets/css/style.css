@@ -2141,17 +2141,21 @@ a:focus {
 }
 
 
-/* ===== Awards & Honors Fix ===== */
+/* ===== Fix inline flow for Awards & Honors text ===== */
+.timeline-item .award-title,
+.timeline-item a {
+  display: inline;            /* keep them inline with text */
+  white-space: normal;        /* allow wrapping naturally */
+  vertical-align: baseline;
+}
 
-/* Make award title bold and white */
+/* Make title bold & white, description/link normal */
 .timeline-item .award-title {
   color: var(--white-1);
   font-weight: 600;
 }
 
-/* Keep links inline, light blue, non-bold */
 .timeline-item a {
-  display: inline;
   color: #66ccff;
   font-weight: 400;
   text-decoration: underline;
@@ -2162,14 +2166,12 @@ a:focus {
   color: #99e0ff;
 }
 
-/* Fine-tune spacing and text color for descriptions */
+/* Keep overall h4 line unified */
 .timeline-item .timeline-item-title {
-  font-weight: 400;
   color: var(--light-gray);
+  font-weight: 400;
   line-height: 1.6;
+  display: inline;            /* important: prevents breaking after h4 start */
+  white-space: normal;
 }
 
-.timeline-item span {
-  color: var(--vegas-gold);
-  font-weight: 500;
-}
