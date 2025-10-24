@@ -2126,12 +2126,16 @@ a:focus {
 }
 
 
-/* Keep publication author lines in one continuous line */
+/* Keep author names truly inline with no forced break */
 .portfolio[data-page="publication"] .pub-meta {
   display: inline-block;
-  white-space: normal;
+  white-space: nowrap;
+  width: auto;
 }
 
-.portfolio[data-page="publication"] .pub-meta em {
+/* Make sure the highlight span stays inline too */
+.portfolio[data-page="publication"] .pub-meta .highlight {
   display: inline;
+  white-space: nowrap;
 }
+
