@@ -2128,10 +2128,11 @@ a:focus {
 
 /* Keep author names truly inline with no forced break */
 .portfolio[data-page="publication"] .pub-meta {
-  display: inline-block;
-  white-space: nowrap;
-  width: auto;
+  display: inline;
+  white-space: normal; /* allow wrapping inside container */
+  word-break: break-word; /* break long text cleanly */
 }
+
 
 /* Make sure the highlight span stays inline too */
 .portfolio[data-page="publication"] .pub-meta .highlight {
