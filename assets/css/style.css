@@ -2175,3 +2175,49 @@ a:focus {
   white-space: normal;
 }
 
+
+
+
+/* ===== Resume Publications Split Sections ===== */
+
+/* General publication text styling */
+.timeline-item .pub-title {
+  color: var(--white-1);
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.timeline-item .pub-detail {
+  color: var(--vegas-gold);
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 2px 0;
+}
+
+.timeline-item .pub-authors {
+  color: var(--light-gray);
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Highlight your own name */
+.timeline-item .highlight-name {
+  color: var(--vegas-gold);
+  font-weight: 500;
+}
+
+/* Keep all elements inline and prevent weird breaks */
+.timeline-item .pub-title,
+.timeline-item .pub-detail,
+.timeline-item .pub-authors,
+.timeline-item .highlight-name {
+  display: inline;
+  white-space: normal;
+}
+
+/* Spacing between sections */
+.timeline + .timeline {
+  margin-top: 30px;
+}
