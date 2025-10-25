@@ -2175,11 +2175,7 @@ a:focus {
   white-space: normal;
 }
 
-
-
-
 /* ===== Resume Publications Split Sections ===== */
-
 /* General publication text styling */
 .timeline-item .pub-title {
   color: var(--white-1);
@@ -2226,7 +2222,6 @@ a:focus {
 
 
 /* ===== Selected Projects Section ===== */
-
 /* Project title (bold white) */
 .timeline-item .timeline-item-title {
   color: var(--white-1);
@@ -2255,7 +2250,6 @@ a:focus {
 
 
 /* ===== Talks & Presentations Section ===== */
-
 /* Section title */
 .timeline-item .timeline-item-title {
   color: var(--white-1);
@@ -2307,7 +2301,6 @@ a:focus {
 
 
 /* ===== Service Section ===== */
-
 /* Role label (e.g., Reviewer, Member) */
 .timeline-item .service-role {
   color: var(--vegas-gold);
@@ -2333,4 +2326,32 @@ a:focus {
 
 .timeline-item .timeline-item-title a:hover {
   color: #99e0ff;
+}
+
+
+/* ===== Teaching Section ===== */
+/* Title (role: bold white) */
+.timeline-item .timeline-item-title {
+  color: var(--white-1);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Course/institution details (light gray) */
+.timeline-item .teaching-detail {
+  color: var(--light-gray);
+  font-weight: 400;
+}
+
+/* Ensure inline layout between role and institution */
+.timeline-item .timeline-item-title,
+.timeline-item .teaching-detail {
+  display: inline;
+  white-space: normal;
+}
+
+/* Dates on the right (gold) */
+.timeline-item span {
+  color: var(--vegas-gold);
+  font-weight: 500;
 }
