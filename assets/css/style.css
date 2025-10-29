@@ -2395,24 +2395,27 @@ a:focus {
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
-/* ORCID icon style — always visible */
+/* ORCID icon style — matches the grey icons */
 .orcid-icon {
-  width: 26px;
-  height: 26px;
-  filter: none; /* show original green logo */
-  border-radius: 50%; /* keeps it neat if background ever changes */
-  transition: transform 0.2s ease;
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(180deg);
+  /* this filter makes it light gray, same tone as your Ionicons */
+  opacity: 0.8;
+  transition: filter 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
 }
 
-/* Hover effect — gentle scale only */
+/* Hover effect — turns yellow like other icons */
 .social-link:hover .orcid-icon {
+  filter: brightness(0) saturate(100%) invert(84%) sepia(30%) saturate(743%) hue-rotate(356deg) brightness(102%) contrast(101%);
+  opacity: 1;
   transform: scale(1.15);
 }
 
-.social-link:hover .orcid-icon {
-  filter: none; /* restore original green color */
-  transform: scale(1.15);
-}
+
+
+
+
 
 
 
