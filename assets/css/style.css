@@ -2410,8 +2410,8 @@ a:focus {
 }
 
 .social-link:hover .orcid-icon {
-  filter: grayscale(0) brightness(1) sepia(1)
-          hue-rotate(20deg) saturate(500%) contrast(1);
+  filter: grayscale(0) brightness(1) sepia(0.9)
+          hue-rotate(40deg) saturate(500%) contrast(1);
   opacity: 1;
   transform: scale(1.15);
 }
