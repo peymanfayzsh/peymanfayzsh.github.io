@@ -2483,12 +2483,13 @@ a:focus {
 /* ===== Fix link color in Publication & Project cards ===== */
 .portfolio[data-page="publication"] .pub-card a,
 .blog[data-page="project"] .proj-card a {
-  color: #4da6ff; /* soft readable blue */
+  color: #66b3ff; /* same light-blue tone as mancinimassimiliano.github.io */
   text-decoration: underline;
   font-weight: 400;
 }
 
 .portfolio[data-page="publication"] .pub-card a:hover,
 .blog[data-page="project"] .proj-card a:hover {
-  color: var(--orange-yellow-crayola); /* matches hover color of other links */
+  color: var(--orange-yellow-crayola); /* same hover yellow as the rest */
 }
+
