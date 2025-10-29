@@ -2395,17 +2395,17 @@ a:focus {
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
-/* ORCID icon style */
+/* ORCID icon style — always visible */
 .orcid-icon {
   width: 26px;
   height: 26px;
-  filter: brightness(0) invert(1); /* makes it white to match theme */
-  transition: transform 0.2s ease, filter 0.3s ease;
+  filter: none; /* show original green logo */
+  border-radius: 50%; /* keeps it neat if background ever changes */
+  transition: transform 0.2s ease;
 }
 
-/* Hover effects */
-.social-link:hover ion-icon {
-  color: var(--orange-yellow-crayola);
+/* Hover effect — gentle scale only */
+.social-link:hover .orcid-icon {
   transform: scale(1.15);
 }
 
@@ -2413,4 +2413,8 @@ a:focus {
   filter: none; /* restore original green color */
   transform: scale(1.15);
 }
+
+
+
+
 
