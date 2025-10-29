@@ -2479,3 +2479,16 @@ a:focus {
     aspect-ratio: 16 / 9;          /* crops tall images into a neat frame */
   }
 }
+
+/* ===== Fix link color in Publication & Project cards ===== */
+.portfolio[data-page="publication"] .pub-card a,
+.blog[data-page="project"] .proj-card a {
+  color: #4da6ff; /* soft readable blue */
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.portfolio[data-page="publication"] .pub-card a:hover,
+.blog[data-page="project"] .proj-card a:hover {
+  color: var(--orange-yellow-crayola); /* matches hover color of other links */
+}
