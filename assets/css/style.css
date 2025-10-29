@@ -2406,16 +2406,20 @@ a:focus {
 .orcid-icon {
   width: 28px;
   height: 28px;
-  fill: var(--light-gray-70);      /* same grey as your Ionicons */
   opacity: 0.85;
-  transition: fill 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  filter: grayscale(1) brightness(0.8);   /* make the green logo grey */
 }
 
+/* hover: same yellow as the other icons */
 .social-link:hover .orcid-icon {
-  fill: var(--orange-yellow-crayola);  /* same yellow hover colour */
+  filter: grayscale(0) brightness(1) sepia(1)
+          hue-rotate(10deg) saturate(500%) contrast(1)
+          drop-shadow(0 0 2px var(--orange-yellow-crayola));
   opacity: 1;
   transform: scale(1.15);
 }
+
 
 
 
