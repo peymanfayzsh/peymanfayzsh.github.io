@@ -9,8 +9,6 @@
 
 
 
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -2402,23 +2400,24 @@ a:focus {
   transform: scale(1.15);
 }
 
-/* Inline ORCID icon — fully recolorable */
+/* Default ORCID icon appearance */
 .orcid-icon {
   width: 28px;
   height: 28px;
   opacity: 0.85;
-  transition: opacity 0.3s ease, transform 0.2s ease;
-  filter: grayscale(1) brightness(0.8);   /* make the green logo grey */
+  filter: grayscale(1) brightness(0.8);
+  transition: filter 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
 }
 
-/* hover: same yellow as the other icons */
+/* Perfectly matching hover color */
 .social-link:hover .orcid-icon {
-  filter: grayscale(0) brightness(1) sepia(1)
-          hue-rotate(10deg) saturate(500%) contrast(1)
-          drop-shadow(0 0 2px var(--orange-yellow-crayola));
+  filter: grayscale(1) brightness(1) sepia(1) hue-rotate(0deg)
+          saturate(400%) brightness(1.1)
+          drop-shadow(0 0 3px var(--orange-yellow-crayola));
   opacity: 1;
   transform: scale(1.15);
 }
+
 
 
 
