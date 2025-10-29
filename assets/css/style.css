@@ -2406,17 +2406,17 @@ a:focus {
 .orcid-icon {
   width: 28px;
   height: 28px;
-  fill: var(--light-gray-70); /* same grey as Ionicons */
+  fill: var(--light-gray-70);      /* same grey as your Ionicons */
   opacity: 0.85;
   transition: fill 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
 }
 
-/* Hover effect — same yellow as others */
 .social-link:hover .orcid-icon {
-  fill: var(--orange-yellow-crayola);
+  fill: var(--orange-yellow-crayola);  /* same yellow hover colour */
   opacity: 1;
   transform: scale(1.15);
 }
+
 
 
 
