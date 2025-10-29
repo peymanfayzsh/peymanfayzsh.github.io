@@ -2384,33 +2384,39 @@ a:focus {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 18px; /* slightly more spacing for larger icons */
+  gap: 18px;
   padding-left: 5px;
 }
 
-/* Ionicons style */
+/* Ionicons */
 .social-link ion-icon {
   color: var(--light-gray-70);
-  font-size: 28px; /* larger icons */
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-/* ORCID icon — now perfectly matches other icons */
-.orcid-icon {
-  width: 28px;
-  height: 28px;
-  fill: var(--light-gray-70);
+  font-size: 28px;
   opacity: 0.85;
-  transition: fill 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
-  filter: none !important; /* override previous filters */
+  transition: color 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
 }
 
-/* Hover effect — exact same yellow as other icons */
-.social-link:hover .orcid-icon {
-  fill: var(--orange-yellow-crayola);
+.social-link:hover ion-icon {
+  color: var(--orange-yellow-crayola);
   opacity: 1;
   transform: scale(1.15);
 }
+
+/* ORCID icon — match color and behavior */
+.orcid-icon {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(180deg);
+  opacity: 0.85;
+  transition: filter 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
+}
+
+.social-link:hover .orcid-icon {
+  filter: brightness(0) saturate(100%) invert(84%) sepia(30%) saturate(743%) hue-rotate(356deg) brightness(102%) contrast(101%);
+  opacity: 1;
+  transform: scale(1.15);
+}
+
 
 
 
