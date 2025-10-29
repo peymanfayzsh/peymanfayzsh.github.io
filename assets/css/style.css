@@ -2384,17 +2384,33 @@ a:focus {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 18px; /* slightly more spacing for larger icons */
   padding-left: 5px;
 }
 
-.social-link {
+/* Ionicons style */
+.social-link ion-icon {
   color: var(--light-gray-70);
-  font-size: 22px;
+  font-size: 28px; /* larger icons */
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
-.social-link:hover {
+/* ORCID icon style */
+.orcid-icon {
+  width: 26px;
+  height: 26px;
+  filter: brightness(0) invert(1); /* makes it white to match theme */
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+/* Hover effects */
+.social-link:hover ion-icon {
   color: var(--orange-yellow-crayola);
   transform: scale(1.15);
 }
+
+.social-link:hover .orcid-icon {
+  filter: none; /* restore original green color */
+  transform: scale(1.15);
+}
+
