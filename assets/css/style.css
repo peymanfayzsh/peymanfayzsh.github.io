@@ -2416,3 +2416,66 @@ a:focus {
   transform: scale(1.15);
 }
 
+
+/* ===== Mobile fixes for Publication & Project cards ===== */
+@media (max-width: 640px) {
+  /* Make cards stack vertically on phones */
+  .portfolio[data-page="publication"] .pub-card,
+  .blog[data-page="project"] .proj-card {
+    flex-direction: column;
+    align-items: stretch;
+    overflow: hidden;              /* keep content inside rounded box */
+  }
+
+  /* Let images take full width; remove fixed 320px basis */
+  .portfolio[data-page="publication"] .pub-image,
+  .blog[data-page="project"] .proj-image {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  /* Make media scale nicely */
+  .portfolio[data-page="publication"] .pub-image img,
+  .blog[data-page="project"] .proj-image img,
+  .portfolio[data-page="publication"] .pub-image video,
+  .blog[data-page="project"] .proj-image video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* Prevent flex text overflow */
+  .portfolio[data-page="publication"] .pub-content,
+  .blog[data-page="project"] .proj-content {
+    min-width: 0;                  /* critical to allow wrapping inside flex */
+  }
+
+  /* Improve text wrapping & avoid spilling outside card */
+  .portfolio[data-page="publication"] .pub-title,
+  .portfolio[data-page="publication"] .pub-meta,
+  .blog[data-page="project"] .proj-title,
+  .blog[data-page="project"] .proj-meta {
+    overflow-wrap: anywhere;       /* break long words/links if needed */
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  /* Slightly tighter padding on small screens */
+  .portfolio[data-page="publication"] .pub-card,
+  .blog[data-page="project"] .proj-card {
+    padding: 14px;
+    gap: 12px;
+  }
+}
+
+/* Optional: keep a good image ratio on very narrow screens */
+@media (max-width: 400px) {
+  .portfolio[data-page="publication"] .pub-image img,
+  .blog[data-page="project"] .proj-image img,
+  .portfolio[data-page="publication"] .pub-image video,
+  .blog[data-page="project"] .proj-image video {
+    aspect-ratio: 16 / 9;          /* crops tall images into a neat frame */
+  }
+}
