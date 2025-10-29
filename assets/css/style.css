@@ -2402,20 +2402,22 @@ a:focus {
   transform: scale(1.15);
 }
 
-/* ORCID icon — match color and behavior */
+/* Inline ORCID icon — fully recolorable */
 .orcid-icon {
   width: 28px;
   height: 28px;
-  filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(180deg);
+  fill: var(--light-gray-70); /* same grey as Ionicons */
   opacity: 0.85;
-  transition: filter 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
+  transition: fill 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
 }
 
+/* Hover effect — same yellow as others */
 .social-link:hover .orcid-icon {
-  filter: brightness(0) saturate(100%) invert(84%) sepia(30%) saturate(743%) hue-rotate(356deg) brightness(102%) contrast(101%);
+  fill: var(--orange-yellow-crayola);
   opacity: 1;
   transform: scale(1.15);
 }
+
 
 
 
