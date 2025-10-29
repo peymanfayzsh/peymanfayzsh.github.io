@@ -2395,22 +2395,22 @@ a:focus {
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
-/* ORCID icon style — matches the grey icons */
+/* ORCID icon style — same color behavior as Ionicons */
 .orcid-icon {
   width: 28px;
   height: 28px;
-  filter: brightness(0) saturate(100%) invert(80%) sepia(0%) saturate(0%) hue-rotate(180deg);
-  /* this filter makes it light gray, same tone as your Ionicons */
   opacity: 0.8;
+  filter: grayscale(100%) brightness(80%);
   transition: filter 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
 }
 
 /* Hover effect — turns yellow like other icons */
 .social-link:hover .orcid-icon {
-  filter: brightness(0) saturate(100%) invert(84%) sepia(30%) saturate(743%) hue-rotate(356deg) brightness(102%) contrast(101%);
+  filter: grayscale(0%) brightness(1.2) sepia(1) hue-rotate(10deg) saturate(500%);
   opacity: 1;
   transform: scale(1.15);
 }
+
 
 
 
